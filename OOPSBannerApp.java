@@ -41,6 +41,7 @@ public class OOPSstatic {
 
     public static void main(String[] args) {
 
+       feature/UC6-Methods
         String[] oPattern = getOPattern();
         String[] pPattern = getPPattern();
         String[] sPattern = getSPattern();
@@ -53,6 +54,57 @@ public class OOPSstatic {
                 pPattern[i] + "  " +
                 sPattern[i]
             );
+
+        // Store all banner lines inside an array
+        String[] banner = {
+
+                String.join(" ",
+                        "  ***  ",
+                        "  ***  ",
+                        "  ** ",
+                        "  ***  "),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " *     * ",
+                        " *     * "),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " *     * ",
+                        " *       "),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " **  ",
+                        "  ***  "),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " *       ",
+                        "       * "),
+
+                String.join(" ",
+                        " *     * ",
+                        " *     * ",
+                        " *       ",
+                        " *     * "),
+
+                String.join(" ",
+                        "  ***  ",
+                        "  ***  ",
+                        " *       ",
+                        "  ***  ")
+        };
+
+        // Use loop instead of multiple print statements
+        for (String line : banner) {
+            System.out.println(line);
+        main
         }
     }
 }
